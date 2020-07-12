@@ -1,0 +1,57 @@
+Multiple Linear Regression Analysis
+    Multiple linear regression allows for the combination of multiple variables to potentially increase the chance 
+    of predicting the desired variable. This specific multiple linear regression, compares vehicle weight, 
+    vehicle length, ground clearance, and spoiler angle against to the vehicle's miles per gallon. 
+    The average slope of this model comes out to be about 2.5. This is primarily skewed by the larger positive 
+    slopes of the vehicle length and ground clearance comparisons.
+    One of the other results from this model shows that vehicle length and ground clearance both provide a non-random 
+    amount of variance to the mpg values in the dataset. By themselves, vehicle length only has about a 37% chance 
+    to predict the mpg of the vehicle and ground clearance only has about a 11% to do so, but together combined with 
+    vehicle weight and spoiler angle as well, the model has about a 70% chance to predict the mpg of the vehicle. 
+    Even though 70% isn't a bad predictor, it still leaves a 30% chance that the prediction would be incorrect. I 
+    think that additional variables should included into a new multiple linear regression to potently increase the
+    chance of the mpg prediction being correct more often.
+
+Suspension Coil Summary
+    Below is the table of our summary findings.
+
+    Min.  1st Qu. Median    Mean   3rd Qu.  Max. 
+    1452    1498    1500    1499    1501    1542 
+
+    Based on this data, the variance of the suspension coils does not exceed 100 pounds per square inch, though 
+    it is close at a variance of 90 pounds per square inch. This means that based on this design qualification,
+    all of the suspension coils meet the design specification.
+
+Suspension Coil t-test
+    Using a sample size of 50 to compare to the psi population data, the sample mean came to 1500.18 while the 
+    population mean is equal to 1498.78. Even if our significance level was at the low value of 0.1 percent, our p-value is still above our significance 
+    level at 0.22. Therefore, we do not have sufficient evidence to reject the null hypothesis, and have to 
+    state that the two means are statistically similar. This disproves the alternative hypothesis that the
+    true mean is not equal to 1498.78.
+
+Further Analysis
+    As a consumer, I think the following metrics would be highly valuable to be able to compare to other manufacturers:
+        average vehicle cost, 
+        average fuel efficiency, 
+        average engine performance, 
+        number of vehicle model types, 
+        number of color variations, 
+        average vehicle life, 
+        average length of warranty
+
+    When comparing these metrics to other manufacturers, the main question is, are Mecha Car's vehicles performing
+    in these respects better, the same or worse then their competitors. Each metric is separate because different 
+    consumers are concerned with different metrics, but if the overall trend leans one direction then that can
+    also give a good indication of the quality of the vehicles. 
+
+    The best way to compare each metric this through the multiple one-way analysis of variance (ANOVA) tests. 
+    Each AWOVA test would have the dependent variable be one of the above metrics and the independent valuable
+    would be Vehicle Manufacturers. The null hypothesis of each of the test would be that there is no difference
+    between manufacturers. The alternative hypothesis is that one manufacturer is superior to the others in 
+    respect to the tested metric.
+
+    To perform these tests properly, a list of all available vehicle manufacturers would need to be created and
+    then, preferably from an unbiased source, the data for each metric would need to be collected. These tests 
+    are more for giving management a quick broad overview of crucial aspects of their vehicles that customers would 
+    be interested in. Once these tests are completed, management will have a better idea on what aspects of their
+    product needs to be improved to compete with their competitors.
